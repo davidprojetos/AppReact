@@ -32,11 +32,11 @@ jobs:
 
       - name: Build Android
         run: |
-          cd android
+          cd AppReact/android
           ./gradlew assembleRelease
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: app-release
-          path: android/app/build/outputs/apk/release/app-release.apk
+          path: AppReact/android/app/build/outputs/apk/release/app-release.apk
